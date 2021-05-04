@@ -1,0 +1,178 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+}
+.navbar{
+    background-color: #e5e5e5;
+    overflow: auto;
+    padding: 10px;
+}
+.heading {
+  width:20%;
+  float:left;
+  color:darkgrey;
+  text-align: center;
+}
+.heading a{
+  text-decoration: none;
+  font-size: 1.4rem;
+}
+.home{
+    width:40%;
+    float:left;
+    color:darkgrey;
+    
+}
+.home a{
+    float:left;
+    color:black;
+    text-decoration: none;
+    margin:2px 5px;
+    font-size: 1.1rem;
+    text-align: center;
+}
+.home a:hover{
+  color:silver;
+}
+.authentication{
+  width:40%;
+  float:left;
+}
+.authentication input{
+  width: 70%;
+  padding: 8px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  margin-left:10px;
+  border: 1.2px solid black;
+  text-align: center;
+}
+.authentication button{
+  width:13%;
+  text-align: center;
+  padding: 3px;
+}
+.content{
+    overflow: auto;
+}
+.left-content{
+  float:left;
+  width:10%;
+  text-align:center;
+}
+.left-content a{
+  background-color:#e5e5e5;
+  text-decoration: none;
+  padding:5px;
+  margin-top:7px;
+  display: block;
+  width:100%;
+  color:black;
+}
+.left-content a:hover{
+  color:silver;
+}
+.mid-content{
+    
+    float:left;
+    width:60%;
+    padding:0 20px;
+    margin-top:10px;
+}
+.job-content-private{
+  float:left;
+  width:33%;
+  padding:0 20px;
+  
+}
+.job-content-mixed{
+  float:left;
+  width:33%;
+  padding:0 20px;
+  
+}
+.job-content-public{
+  float:left;
+  width:33%;
+  padding:0 20px;
+  
+}
+.job-content-private a, .job-content-public a, .job-content-mixed a{
+  text-decoration: none;
+}
+.job-content-private h2,p,button{
+  margin-bottom: 7px;
+}
+.job-content-public h2,p,button{
+  margin-bottom: 7px;
+}
+.job-content-mixed h2,p,button{
+  margin-bottom: 7px;
+}
+.right-content{
+  
+  float:left;
+  width:15%;
+  margin-top:7px;
+}
+.card{
+  width:75%;
+  background-color:burlywood;
+  margin-bottom:5px;
+}
+.card img{
+  width:100%;
+  height:50%;
+}
+.card a{
+  text-decoration: none;
+}
+.container{
+  margin-bottom:2px;
+  padding:2px 10px;
+  background-color: cornsilk;
+}
+.ads{
+    
+    float:left;
+    width:15%;
+    margin-top:7px;
+    text-align: center;
+    font-size: 1.8rem;
+}
+.footer{
+    background-color:#e5e5e5;
+    text-align:center;
+    padding:10px;
+    margin-top:7px;
+   
+}
+.footer a{
+  text-decoration: none;
+  color:black;
+  font-size:1.1rem;
+  margin-right:5px;
+}
+.footer a:hover{
+  color:silver;
+}
+
+@media only screen and (max-width: 620px) {
+    .left-content, .mid-content, .ads,
+    .heading, .home, .authentication{
+        width:100%
+    }
+    .home a{
+      margin-left:50px;
+    }
+    .right-content{
+      width:100%;
+      text-align: center;
+    }
+    .card {
+      width:50%;
+      text-align: center;
+      margin-left:100px;
+    }
+    
+}

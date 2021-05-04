@@ -1,0 +1,49 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="{% static 'BekarJubok/register.css' %}">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    </head>
+    <body>
+        <div>
+        <form action="" method="POST">
+            {% csrf_token %}
+            <div class="form">
+
+            <div class="manual">
+            <label>Username</label>
+            <input type="text" name="username" placeholder="username">
+            
+            <label>Password</label>
+            <input type="password" name="password" placeholder="password">
+            
+            <input type="submit" value="Login">
+            </div>
+            <div class="social">
+                <a href="https://www.facebook.com/" class="fb btn">
+                    <i class="fa fa-facebook fa-fw"></i> Login with Facebook
+                   </a>
+                   <a href="https://twitter.com/" class="twitter btn">
+                    <i class="fa fa-twitter fa-fw"></i> Login with Twitter
+                  </a>
+                  <a href="https://www.linkedin.com/" class="google btn"><i class="fa fa-linkedin fa-fw">
+                </i> Login with Linkedin
+              </a>
+            </div>
+        </div>
+        </form>
+       <!--<form method="POST">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button class="btn btn-secondary">
+            Register</button>
+        </form>-->
+    </div>
+    </body>
+</html>
+

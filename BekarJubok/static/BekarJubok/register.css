@@ -1,0 +1,87 @@
+.form{
+    overflow: auto;
+  }
+.manual{
+    width:50%;
+    float:left;
+  }
+.social{
+    width:50%;
+    float:left;
+    text-align: center;
+  }
+.manual input[type=text] {
+    box-sizing: border-box;
+    width:100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  
+}
+.manual input[type=password]{
+  box-sizing: border-box;
+  width:100%;
+  padding:12px 20px;
+  margin: 8px 0;
+  display:inline-block;
+  border:1px solid #ccc;
+  border-radius:4px;
+ }
+  
+.manual input[type=email]{
+  box-sizing: border-box;
+  width:100%;
+  padding:12px 20px;
+  margin: 8px 0;
+  display:inline-block;
+  border:1px solid #ccc;
+  border-radius:4px;
+}
+button{
+  width:38%;
+  background-color: #4CAF50;
+  text-align: center;
+  padding: 8px 5px;
+ }
+
+.social a{
+    text-decoration: none;
+    display:block;
+    padding:8px;
+    font-size: 1.3rem;
+    margin-top: 25px;
+    margin-left: 200px;
+    
+}
+.fb {
+    background-color: #3B5998;
+    color: white;
+    width:35%;
+  }
+  
+  .twitter {
+    background-color: #55ACEE;
+    color: white;
+    width:35%;
+  }
+  
+  .google {
+    background-color: #dd4b39;
+    color: white;
+    width:35%;
+  }
+  
+@media only screen and (max-width: 620px) {
+    .manual, .social{
+        width:100%;
+    }
+    .fb, .twitter, .google{
+        width:95%;
+    }
+    .social a{
+        margin:10px 0 0 0;
+    }
+  }
+  

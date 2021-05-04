@@ -1,0 +1,11 @@
+<h1>Search Results</h1>
+{% block content %}
+<ul>
+    <li>jobs</li>
+  {% for job in circular %}
+    <li>
+      {{ job.position }}
+    </li>
+  {% endfor %}
+</ul>
+{% endblock %}
