@@ -43,7 +43,6 @@ def login(request):
 
         else:
             print("ohh no")
-            messages.info(request,'invalid credentials')
             return redirect("login")
     
     else:
@@ -62,5 +61,5 @@ def search(request):
     position = JObDescription.objects.filter(position__contains=query)
     skills = JObDescription.objects.filter(skills__contains=query)
     deadline = JObDescription.objects.filter(app_dedline__contains=query)
-    circular = company.union(position)#
+    circular = company.union(position)
     return render(request,'BekarJubok/search_results.html',{'circular':circular})
