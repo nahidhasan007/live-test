@@ -11,7 +11,7 @@
     </head>
     <body>
         <div>
-        <form action="register" method="POST">
+        <form action="{% url 'Register' %}" method="POST">
             {% csrf_token %}
             <div class="form">
 
